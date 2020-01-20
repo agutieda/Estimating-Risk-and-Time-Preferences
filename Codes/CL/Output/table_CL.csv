@@ -1,0 +1,13 @@
+Row,Risk Only,Time Only,Risk+Time Only,Joint,Correlated,by Individual
+med_ra,0.503,NaN,0.485,0.464,0.49,0.238
+se_med_ra,0.072,NaN,0.109,0.076,0.074,0.53
+sd_ra,0.569,NaN,0.413,0.582,0.554,0.012
+se_sd_ra,0.084,NaN,0.061,0.085,0.079,0.278
+med_da,NaN,0.903,0.939,0.915,0.913,0.918
+se_med_da,NaN,0.012,0.017,0.01,0.01,0.236
+sd_da,NaN,0.089,0.13,0.085,0.082,0.054
+se_sd_da,NaN,0.017,0.034,0.013,0.013,0.031
+rho_rada,NaN,NaN,NaN,NaN,-0.453,0.023
+se_rho_rada,NaN,NaN,NaN,NaN,0.254,NaN
+nObs,1880,1128,1410,4418,4418,47
+loglike,-0.878,-0.436,-0.362,-0.606,-0.604,-0.406
