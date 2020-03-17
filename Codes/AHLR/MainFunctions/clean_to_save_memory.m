@@ -10,7 +10,7 @@
 % - Save memory by keeping only the variables used in
 %   table_results and plot_results
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 

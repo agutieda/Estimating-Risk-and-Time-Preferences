@@ -9,7 +9,7 @@
 % This script:
 % - Estimate risk and time preferences allowing for correlation
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 

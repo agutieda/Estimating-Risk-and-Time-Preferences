@@ -9,7 +9,7 @@
 % This script:
 % - Summarize estimates in a table and export to latex
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 
@@ -162,4 +162,3 @@ table_CL = table(results_sep_ra,results_sep_da,results_sep_rada,results_joint,..
 table2latex(table_CL,'Output/table_CL.tex');
 
 writetable(table_CL,'Output/table_CL.csv','WriteRowNames',1,'WriteVariableNames',1);
-

@@ -11,7 +11,7 @@
 % - Plot histogram of CDF of estimated preferences by individual
 % - Plot scatterplot of individual estimates
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 
@@ -166,7 +166,7 @@ print(fig,'Output/EstimatedDistributions_CL_cdf_df','-depsc2');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 figure1 = figure('Name','Risk Aversion vs Delay Aversion by Subject');
-set(figure1,'Units','Normalized','Position', [0.1 0.1 0.8 0.8]);
+set(figure1,'Units','Normalized');
 axes1 = axes('Parent',figure1,'XGrid','on','YGrid','on'); hold(axes1,'on');
 ylabel('$h$','FontSize',16,'Interpreter','latex');
 xlabel('$\hat{\delta}$','FontSize',16,'Interpreter','latex');
@@ -179,4 +179,3 @@ set(regLine,'Parent',axes1,'LineWidth',1.2,'LineStyle','--',...
     'Color',[0.87058824300766 0.490196079015732 0]);
 xlim([0.5,1]); ylim([-2,1]);
 print(figure1,'Output/IndividualScatter_CL','-depsc2');
-

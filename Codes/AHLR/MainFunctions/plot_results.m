@@ -11,7 +11,7 @@
 % - Plot histogram of CDF of estimated preferences by individual
 % - Plot scatterplot of individual estimates
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 
@@ -189,10 +189,10 @@ print(fig,'Output/EstimatedDistributions_AHLR_cdf_df','-depsc2');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 figure1 = figure('Name','Risk Aversion vs Delay Aversion by Subject');
-set(figure1,'Units','Normalized','Position', [0.1 0.1 0.8 0.8]);
+set(figure1,'Units','Normalized');
 axes1 = axes('Parent',figure1,'XGrid','on','YGrid','on'); hold(axes1,'on');
-ylabel('$h$','FontSize',16,'Interpreter','latex');
-xlabel('$\hat{\delta}$','FontSize',16,'Interpreter','latex');
+ylabel('$h$','FontSize',12,'Interpreter','latex');
+xlabel('$\hat{\delta}$','FontSize',12,'Interpreter','latex');
 scatter(md_da_plot,md_ra_plot,...
     'MarkerFaceColor',[0.301960784313725 0.749019607843137 0.929411764705882],...
     'MarkerEdgeColor',[0 0.450980392156863 0.741176470588235],...
@@ -202,5 +202,3 @@ set(regLine,'Parent',axes1,'LineWidth',1.2,'LineStyle','--',...
     'Color',[0.87058824300766 0.490196079015732 0]);
 xlim([0.9,1]); ylim([-1,1]);
 print(figure1,'Output/IndividualScatter_AHLR','-depsc2');
-
-

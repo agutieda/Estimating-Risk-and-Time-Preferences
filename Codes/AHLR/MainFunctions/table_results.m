@@ -9,7 +9,7 @@
 % This script:
 % - Summarize estimates in a table and export to latex
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 
@@ -149,4 +149,3 @@ table_AHLR = table(results_sep_ra,results_sep_da,results_joint,results_individua
 table2latex(table_AHLR,'Output/table_AHLR.tex');
 
 writetable(table_AHLR,'Output/table_AHLR.csv','WriteRowNames',1,'WriteVariableNames',1);
-

@@ -14,7 +14,7 @@
 % - 3: Estimate using observations for each individual separatelly
 % - Plot and report results in table
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 

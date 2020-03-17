@@ -1,7 +1,7 @@
 % RANDOM MODELS FOR THE JOINT TREATMENT OF RISK AND TIME PREFERENCES
 % by Jose Apesteguia, Miguel A. Ballester and Angelo Gutierrez
 %
-% Script to estimate DEU-H, PVCE-H and CEPV-H models using data from:
+% Script to estimate DEU-H model using data from:
 % "Estimating Time Preferences from Convex Budgets"
 %  by James Andreoni and Charles Sprenger.
 %  American Economic Review, (2012)
@@ -9,7 +9,7 @@
 % This file:
 % - Estimate DEU-H with correlated preferences by pooling all observations
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 

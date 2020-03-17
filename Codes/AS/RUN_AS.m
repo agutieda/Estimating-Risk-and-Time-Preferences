@@ -1,19 +1,19 @@
 % RANDOM MODELS FOR THE JOINT TREATMENT OF RISK AND TIME PREFERENCES
 % by Jose Apesteguia, Miguel A. Ballester and Angelo Gutierrez
 %
-% Script to estimate DEU-H, PVCE-H and CEPV-H models using data from:
+% Script to estimate DEU-H model using data from:
 % "Estimating Time Preferences from Convex Budgets"
 %  by James Andreoni and Charles Sprenger.
 %  American Economic Review, (2012)
 %
 % This file:
-% - Estimate risk and time preferences under each representation, assuming independence
+% - Estimate risk and time preferences under the DEU-H representation
 % - Compute std. error of estimates using delta method
 % - Estimate each representation allowing for correlation btw risk and time preferences
 % - Estimate each representation using observations for each individual separatelly
 % - Plot and report results in table
 %
-% November 2019
+% March 2020
 %
 % Tested using Matlab 2019b
 
@@ -27,24 +27,18 @@ tic;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 compute_baseline_DEU;
-compute_baseline_PVCE;
-compute_baseline_CEPV;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 2) Estimate each representation allowing for correlation between preferences
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 compute_correlated_DEU;
-compute_correlated_PVCE;
-compute_correlated_CEPV;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 3) Estimate each represenation by individual
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 compute_individual_DEU;
-compute_individual_PVCE;
-compute_individual_CEPV;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 4) (OPTIONAL) Save space by keeping only the variables used in plot_results and table_results
